@@ -1,0 +1,12 @@
+version: '3'
+services:
+  sango-sftp:
+    container_name: sango-sftp
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./data/:/home/sango
+    ports:
+      - "21:21"
+      - "22:22"
