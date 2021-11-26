@@ -1,5 +1,4 @@
 FROM alpine:latest
-LABEL maintainer="Vivek Gite webmater@cyberciti.biz"
 RUN apk add --update --no-cache openssh 
 
 COPY configs/sshd_config /etc/ssh/sshd_config
