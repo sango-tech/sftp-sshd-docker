@@ -4,9 +4,10 @@ services:
     container_name: sango-sftp
     build:
       context: .
-      dockerfile: Dockerfile
-    volumes:
-      - ./data/:/home/sango
+      args:
+          SSH_MASTER_USER: sango
+          SSH_MASTER_PASS: sango
     ports:
-      - "21:21"
-      - "22:22"
+      - "2222:22"
+    volumes:
+      - ./sftp-data/uploaded:/uploads
