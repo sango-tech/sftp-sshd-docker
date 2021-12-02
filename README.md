@@ -1,6 +1,6 @@
 # Introducion
 
-This package only using for build a SFTP on local using docker. Not recommended for production. This is supporting 2 main login methods
+This package is only used for building an SFTP locally using docker. This is supporting 2 main login methods
 
 - By using username/password
 - By using a private key
@@ -26,7 +26,7 @@ username: sango
 password: sango
 ```
 
-# Login by using private key
+# Login by using the private key
 
 ```
 username: sango
